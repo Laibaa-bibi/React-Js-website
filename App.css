@@ -1,0 +1,258 @@
+
+
+/* Base styles */
+
+
+.head {
+  color: white;
+  background-color: rgb(5, 0, 51);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.maindiv {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  background-color: rgb(168, 207, 192);
+  justify-content: space-evenly;
+}
+
+.mainh {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.dp {
+  width: 100%;
+  max-width: 70vh;
+}
+
+.p1 {
+  text-align: center;
+  font-size: 25px;
+  font-style: oblique;
+  padding-top: 20px;
+}
+
+
+.body {
+  display: flex;
+  padding: 15px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 20vh;
+  margin-bottom: 50px;
+}
+
+.data{
+  display: flex;
+  direction: row;
+  justify-content: space-evenly;
+  margin-top: 35px;
+  background-color: rgb(255, 248, 248);
+  color: rgb(8, 0, 85);
+}
+
+.data_vals{
+  display: flex;
+  direction: row;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  background-color: rgb(215, 225, 235);
+  font-style: oblique;
+}
+
+.enterfields{
+ text-align: center;
+ font-size: x-large;
+}
+
+.mystack{
+  font-style: italic;
+  text-align: center;
+  font-size: x-large;
+ }
+.contactmain{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+.contactpic{
+   margin-top: 25px;
+  height: 50vh; 
+}
+
+.headingc1{
+  font-size: 60px;
+  color: rgb(5, 0, 51);;
+}
+.parac1{
+  font-style: oblique;
+  font-size: 20px;
+}
+
+.contactbody{
+  display: flex;
+  flex-direction: column;
+  margin: 55px;
+}
+
+.contacticons{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  color: rgb(5, 0, 51);
+}
+
+.contactinfo{
+  display: flex;
+  flex-direction: row;
+  padding-left: 130px;
+  text-align: center;
+  justify-content: space-evenly;
+  color: rgb(5, 0, 51);
+}
+
+.contactform{
+  background-color: rgb(5, 0, 51);
+  color: white;
+  text-align: center;
+ margin-left: 270px;
+ margin-right: 270px;
+ height: 70vh;
+}
+
+
+.submitbtn{
+  width:20vh;
+  height:7vh;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+input[type="text"], input[type="email"]{
+  font-size: 16px;
+  height: 5vh;
+}
+input, textarea {
+  padding: 10px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.homemain{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-evenly;
+  background-color: rgb(212, 198, 198);
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 300px) {
+   /*Tablets and larger */
+ .maindiv {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .mainh {
+    font-size: 50px;
+    margin: 30px;
+  }
+
+  .dp {
+    height: auto;
+    max-height: 60vh;
+    width: 50%;
+    margin: 0;
+  }
+
+  .p1 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+   .body {
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 50px;
+    
+  }  
+
+  
+} 
+
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  /* Adjustments for screens smaller than 768px */
+
+
+
+  .contactmain {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  .homemain {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .contactpic {
+    margin-top: 15px;
+    height: auto; /* Adjust height to fit content */
+    max-width: 80%; /* Limit image width */
+  }
+
+  .headingc1 {
+    font-size: 40px; /* Reduce font size for better fit */
+    text-align: center; /* Center the text */
+  }
+
+  .parac1 {
+    font-size: 16px; /* Reduce font size for better fit */
+    text-align: center; /* Center the text */
+  }
+
+  .contactbody{
+    margin: auto;
+  }
+  
+  .contacticons{
+    padding-left: 0px;
+    text-align: start;
+
+  }
+  
+  .contactinfo{
+    font-size: 8px;
+    text-align: start;
+    padding-left: 0px;
+  }
+
+  .contactform{
+    background-color: rgb(5, 0, 51);
+    color: white;
+    text-align: start;
+   margin-left: 0px;
+   margin-right: 0px;
+   height: 70vh;
+  }
+
+  
+}
+
